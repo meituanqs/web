@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="fade-in">
+        <ul>
+            <li><a href="index.html"><div class="container1">主页</div></a></li>
+            <li><a href="star.html"><div class="container1">菱形</div></a></li>
+            <li><a href="学校主页.html"><div class="container1">学校主页</div></a></li>
+            <li><a href="综合使用作业.html"><div class="container1">综合使用作业</div></a></li>
+            <li><a href="表格.html"><div class="container1">表格</div></a></li>
+        </ul>
+    </nav>
+    <main>
+        <header class="fade-in">
+            <h1>个人简历</h1>
+            <img src="tx.JPG" alt="头像">
+            <nav>
+                <li><a href="#section1"><div class="container1">基本信息Information</div></a></li>
+                <li><a href="#section2"><div class="container1">教育背景Education</div></a></li>
+                <li><a href="#section3"><div class="container1">工作经验Experience</div></a></li>
+                <li><a href="#section4"><div class="container1">自我介绍Introduction</div></a></li>
+                <li><a href="#section5"><div class="container1">详细信息</div></a></li>
+            </nav>
+        </header>
+        <div >
+            <h1> 陈家铭</h1>
+            <hr>
+            <h2 id="section1">基本信息Information</h2>
+            <ul>
+                <li>
+                    <b>性别：</b>男
+                </li>
+                <li>
+                    <b>电话：</b>12345678910</a>
+                </li>
+                <li>
+                    <b>邮箱：</b>123@456.com
+                </li>
+                <li>
+                    <b>生日：</b>2004.03.03
+                </li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <h2 id="section2">教育背景Education</h2>
+            <table style="width:100%" border=1 cellspacing=0>
+                <tr>
+                    <td>时间</td>
+                    <td>学校</td>
+                    <td>职务</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>222</td>
+                    <td>333</td>
+                </tr>
+                <tr>
+                    <td>444</td>
+                    <td>555</td>
+                    <td>666</td>
+                </tr>
+                <tr>
+                    <td>777</td>
+                    <td>888</td>
+                    <td>999</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 id="section3">工作经验Experience</h2>
+            <ol>
+                <li>无</li>
+                <li>无</li>
+                <li>无</li>
+                <li>无</li>
+            </ol>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2 id="section4">自我介绍Introduction</h2>
+            <ol>
+                <li>无</li>
+                <li>无</li>
+                <li>无</li>
+                <li>无</li>
+            </ol>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <button id="section5" onclick="toggleContent()">隐藏信息</button>  
+    </main>
+        <div id="content">
+          <section class="fade-in">
+            <h2 style="color: rgb(255, 255, 255); font-size: 24px; text-align: center;">个人自序</h2>
+            <p style="color: rgb(255, 0, 0); font-size: 24px; text-align: center;">SUIBE彭于晏。</p>
+          </section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section class="fade-in">
+            <h2 style="color: rgb(255, 255, 255); font-size: 24px; text-align: center;">个人爱好</h2>
+            <p style="color: rgb(255, 0, 0); font-size: 24px; text-align: center;">原神，原神，还是原神。</p>
+          </section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <section class="fade-in">
+            <h2 style="color: rgb(255, 255, 255); font-size: 24px; text-align: center;">个人成绩</h2>
+            <p style="color: rgb(255, 0, 0); font-size: 24px; text-align: center;">四六级证书、奖学金证书、机动车驾驶证。</p>
+          </section>
+        </div>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("content");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+        </div>
+</body>
+</html>

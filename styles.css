@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:#ffffff
+}
+
+header {
+    background:#47388a;
+    transition:background 2s;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background: transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 2s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 2s ease-in-out;
+}
+
+
+section {
+    transition: all 2s ease-in-out;
+}
+.container {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container1 {
+    display: inline-block;
+    padding: 10px;
+    background-color: #47388a;
+    color: #ffffff;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.container1:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
